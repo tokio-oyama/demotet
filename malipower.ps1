@@ -29,3 +29,7 @@ $action = New-ScheduledTaskAction -Execute 'Powershell.exe' `
 $trigger =  New-ScheduledTaskTrigger -Daily -At 9am
 
 Register-ScheduledTask -Action $action -Trigger $trigger -TaskName "DHO8DE6FDE4FE45SFD78GG" -Description "JG43KGJK834GF5KJ6"
+
+
+
+Add-Type -Path 'C:\Program Files\Microsoft SQL Server\110\SDK\Assemblies\Microsoft.SqlServer.Smo.dll'
